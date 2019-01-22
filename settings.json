@@ -5,6 +5,14 @@
   },
   "datasources": [
     {
+      "name": "SIRENE unité légales",
+      "url": "https://ldf.sireneld.io/sirene-unite-legale"
+    },
+    {
+      "name": "SIRENE établissements",
+      "url": "https://ldf.sireneld.io/sirene-etablissement"
+    },
+    {
       "name": "DBpedia 2016-04",
       "url": "http://fragments.dbpedia.org/2016-04/en"
     },
@@ -50,19 +58,23 @@
     }
   ],
   "prefixes": {
-    "rdf":         "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs":        "http://www.w3.org/2000/01/rdf-schema#",
-    "owl":         "http://www.w3.org/2002/07/owl#",
-    "skos":        "http://www.w3.org/2004/02/skos/core#",
-    "xsd":         "http://www.w3.org/2001/XMLSchema#",
-    "dc":          "http://purl.org/dc/terms/",
-    "foaf":        "http://xmlns.com/foaf/0.1/",
-    "dbpedia":     "http://dbpedia.org/resource/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "dbpedia": "http://dbpedia.org/resource/",
     "dbpedia-owl": "http://dbpedia.org/ontology/",
-    "dbpprop":     "http://dbpedia.org/property/",
-    "ruben":       "https://ruben.verborgh.org/profile/#",
-    "schema":      "http://schema.org/",
-    "bow":         "https://betweenourworlds.org/ontology/"
+    "dbpprop": "http://dbpedia.org/property/",
+    "ruben": "https://ruben.verborgh.org/profile/#",
+    "schema": "http://schema.org/",
+    "bow": "https://betweenourworlds.org/ontology/",
+    "sirene": "https://sireneld.io/vocab/sirene#",
+    "sirext": "https://sireneld.io/vocab/sirext#",
+    "siren": "https://sireneld.io/siren/",
+    "siret": "https://sireneld.io/siret/"
   },
-  "queries": "(Will be generated from the 'queries' folder by running the './queries-to-json' script.)"
+  "queries": []
 }
