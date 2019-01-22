@@ -1,0 +1,17 @@
+# 1. Établissements d'une unité légale avec nom UL
+# Datasource: https://ldf.sireneld.io/sirene-etablissement https://ldf.sireneld.io/sirene-unite-legale
+
+SELECT ?siret ?nomUniteLegale ?ville ?codeActivitePrincipale
+WHERE {
+
+    ?etablissement  sirext:uniteLegale siren:812231132 ;
+                    sirene:siret ?siret ;
+                    sirene:libellecommuneetablissement ?ville ;
+                    sirene:activiteprincipaleetablissement ?codeActivitePrincipale .
+    
+
+    { siren:812231132 sirene:prenomusuelunitelegale ?prenom ;
+                     sirene:nomunitelegale ?nom .
+     bind(concat(?prenom,?nom) as ?nomUniteLegale) }
+     union {siren:812231132 sirene:prenomusuelunitelegale ?prenom }
+}
